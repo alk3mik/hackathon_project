@@ -4,3 +4,14 @@
  * font-weight: 300,400,400i,700
  *
  */
+
+.home-viewport {
+    background-image: url("../img/bg_test.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+}

@@ -1,4 +1,4 @@
-
+/* Florian */
 
 $( document ).ready(function() {
 
@@ -28,3 +28,16 @@ $( document ).ready(function() {
     }
 
 });
+
+
+/* FIN Florian */
+
+
+/* Noé */
+
+/* FIN Noé */
+
+
+/* Alk-3mic */
+
+/* FIN Alk-3mic */

@@ -21,7 +21,7 @@ $( document ).ready(function() {
     else {
         roundTitle.animate(
             {
-                opacity: '1',
+                // opacity: '1',
                 top: ((viewportH / 100) * 2) + "px",
                 left: ((viewportH / 100) * 2) + "px",
             }, 800);

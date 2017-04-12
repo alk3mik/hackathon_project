@@ -91,11 +91,11 @@ h2 {
 #countdown {
     float: right;
     height: 100%;
-    margin-top: 70vh;
+    margin-top: 60vh;
     font-size: 6.5em;
     font-weight: 100;
     color: #ffffff;
-    text-shadow: 2px 0px 0 #E91E63;
+    text-shadow: 1px 1px 1px #E91E63;
     -webkit-transform: scale(1,1.6);
     -moz-transform: scale(1,1.6);
     -ms-transform: scale(1,1.6);
@@ -103,6 +103,19 @@ h2 {
     transform: scale(1,1.6);
 }
 
+.arrow-down {
+    display: block;
+    position: relative;
+    bottom: -20px;
+    max-width: 15%;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+    opacity: 0.9;
+}
+.arrow-down:hover {
+    cursor: pointer;
+    opacity: 1;
+}
 /* bootstrap overrides */
 
 .navbar {
@@ -122,7 +135,7 @@ h2 {
 }
 .navbar-toggle .icon-bar {
     display: block;
-    width: 30px;
+    width: 45px;
     height: 5px;
     border-radius: 0;
 }

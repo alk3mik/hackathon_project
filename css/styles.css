@@ -21,6 +21,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Roboto, sans-serif;
+}
 /*
     Definition classes
 */
@@ -85,7 +88,24 @@ h2 {
     margin: 0 36%;
 }
 
+#countdown {
+    float: right;
+    height: 100%;
+    margin-top: 70vh;
+    font-size: 6.5em;
+    font-weight: 100;
+    text-shadow: 2px 0px 0 #E91E63;
+    color: #ce3e75;
+    -webkit-transform: scale(1,1.6);
+    -moz-transform: scale(1,1.6);
+    -ms-transform: scale(1,1.6);
+    -o-transform: scale(1,1.6);
+    transform: scale(1,1.6);
+}
 
+.round-time {
+    color: #ff9540;
+}
 /* bootstrap overrides */
 
 .navbar {

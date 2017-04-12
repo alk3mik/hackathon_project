@@ -1,12 +1,22 @@
 /*
  *       Font ROBOTO:
  * font-family: 'Roboto', sans-serif;
- * font-weight: 300,400,400i,700
+ * font-weight: 100,300,400,500,700,900
  *
  */
 
+h1, h2 {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+h2 {
+    font-weight: 100;
+}
 .home-viewport {
-    background-image: url("../img/bg_test.jpg");
+    background-image: url("../img/bg_home.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,6 +25,42 @@
     width: 100vw;
     background-repeat: no-repeat;
 }
+
+.title-wrapper {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.28);
+    opacity: 0;
+}
+.home-title {
+    display: block;
+    margin: 19% 0 0 7%;
+    font-weight: 400;
+    font-size: 5.1em;
+    width: 100%;
+    letter-spacing: -3px;
+    color: #000;
+}
+.home-sub-title {
+    display: block;
+    margin: -6px 0 0 15%;
+    font-size: 6.4em;
+    width: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-logo-toulouse {
+    max-width: 54%;
+    margin: 10px 23%;
+}
+.home-logo-wcs {
+    position: absolute;
+    bottom: 0;
+    max-width: 28%;
+    margin: 0 36%;
+}
+
 
 /* bootstrap overrides */
 
@@ -38,6 +84,24 @@
     width: 30px;
     height: 5px;
     border-radius: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .home-title {
+        margin: 14% 0 0 4%;
+        font-weight: 400;
+        font-size: 3.7em;
+        width: 100%;
+        letter-spacing: -3px;
+        color: #000;
+    }
+    .home-sub-title {
+        margin-left: 11%;
+        font-size: 5.0em;
+        width: 100%;
+        letter-spacing: 0px;
+        color: #080808;
+    }
 }
 @media (min-width: 480px) {
     .navbar-header {

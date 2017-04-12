@@ -47,9 +47,9 @@ let x = setInterval(function() {
     let countdownWrapper = $('#countdown');
 
     if(roundTime) {
-        countdownWrapper.css('color', '#ffba4e');
-    } else {
         countdownWrapper.css('color', '#ce3e75');
+    } else {
+        countdownWrapper.css('color', '#ffffff');
     }
 //  el.innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
 //  el.innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds + "<br>" + "J" + " H" + " M" + " S";

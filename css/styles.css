@@ -4,6 +4,28 @@
  * font-weight: 100,300,400,500,700,900
  *
  */
+/*
+	hexadecimal and RGB colors codes:
+
+	- WCS yellow -
+	#FBA858
+	rgba(251, 168, 88, 1)
+
+
+	- Toulouse Pink -
+	#E91E63
+	rgba(233, 30, 99, 1)
+*/
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/*
+    Definition classes
+*/
+
+/* HOME */
 
 h1, h2 {
     font-family: Roboto, sans-serif;
@@ -15,6 +37,8 @@ h1 {
 h2 {
     font-weight: 100;
 }
+
+
 .home-viewport {
     background-image: url("../img/bg_home.jpg");
     -webkit-background-size: cover;
@@ -138,4 +162,121 @@ h2 {
     .collapse.in{
         display:block !important;
     }
+=======
+/* PAGE 2 */
+
+.page2-background {
+/*	background-image: url("../img/markus-spiske-109588.jpg"); */
+	background-image: url("../img/mark-solarski-209233_v2.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+/*    height: 100vh;
+    width: 100vw;*/
+    background-repeat: no-repeat;
+	z-index: 1;
+/*    opacity: 0.2; */
+}
+
+.p2-title1 {
+	color: #000000;
+	font-size: 3.2em;
+	padding: 0;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	line-height: 0.1em;
+	margin: 50px 100px 50px 100px;
+}
+
+h1 span { 
+    background: #FFF; 
+    padding: 0px 50px; 
+}
+
+h3.p2-title2 {
+	color: #000000;
+	line-height: 1.5em;
+	padding: 1%;
+	margin: 0 10% 0 10%;
+	background-color: rgba(251, 168, 88, 0.35);
+	text-align: center;
+	border-radius: 50px 50px 0px 0px;
+/*	color: #FBA858; */
+	transform: translate(0%, 18%);
+}
+
+h2.p2-title2 {
+	line-height: 1.5em;
+	padding: 1%;
+	margin: 0 10% 0 10%;
+	background-color: rgba(233, 30, 99, 0.35);
+	text-align: center;
+	border-radius: 0px 0px 7px 7px;
+	transform: translate(0%, 10%);
+/*	color: #FBA858; */
+}
+
+.p2-para1 {
+	color: #000000;
+	padding: 8%;
+	margin-left: 5%;
+	margin-top: 5%;
+	text-align: justify;
+	background-color: rgba(251, 168, 88, 0.35);
+	font-size: 2em;
+	border-radius: 50px 50px 0px 0px;
+	transform: translate(0%, 2%);
+	padding-bottom: 0;
+}
+
+.p2-list {
+	color: #000000;
+	list-style-type: disc;
+	padding: 8%;
+	margin-left: 5%;
+	text-align: justify;
+	font-size: 2em;
+	background-color: rgba(233, 30, 99, 0.35);
+	line-height: 1.5em;
+	border-radius: 0px 0px 7px 7px;
+	transform: translate(0%, -2%);
+}
+
+.p2-para2 {
+	color: #000000;
+	padding: 8%;
+	margin-right: 5%;
+	margin-top: 4.5%;
+	text-align: justify;
+	background-color: rgba(233, 30, 99, 0.35);
+	font-size: 2em;
+	border-radius: 50px 50px 0px 0px;
+	transform: translate(0%, 3.5%);
+	padding-bottom: 11.5%;
+}
+
+.logo-container {
+	position: relative;
+	height: 100px;
+	padding: 8%;
+	margin-right: 5%;
+	text-align: justify;
+	font-size: 2em;
+	background-color: rgba(251, 168, 88, 0.35);
+	line-height: 1.5em;
+	border-radius: 0px 0px 7px 7px;
+	transform: translate(0%, -2%);
+	padding-bottom: 40%;
+}
+
+.p2-logo-opendata {
+	position: absolute;
+	width: 65%;
+	border: 1.2px solid #E91E63;
+	border-radius: 7px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+>>>>>>> db3a2e4dbb73c3190798f9cdcdd20681623b5b93
 }

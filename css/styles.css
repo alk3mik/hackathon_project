@@ -1,10 +1,9 @@
 /*
  *       Font ROBOTO:
  * font-family: 'Roboto', sans-serif;
- * font-weight: 300,400,400i,700
+ * font-weight: 100,300,400,500,700,900
  *
  */
-
 /*
 	hexadecimal and RGB colors codes:
 
@@ -19,17 +18,32 @@
 */
 
 *, *:after, *:before {
-    box-sizing: border-border;
+    box-sizing: border-box;
 }
 
- /*
- 	Definition classes
- */
+body {
+    font-family: Roboto, sans-serif;
+}
+/*
+    Definition classes
+*/
 
- /* HOME */
+/* HOME */
+
+h1, h2 {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+h2 {
+    font-weight: 100;
+}
+
 
 .home-viewport {
-    background-image: url("../img/bg_test.jpg");
+    background-image: url("../img/bg_home.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,30 +53,207 @@
     background-repeat: no-repeat;
 }
 
-/* PAGE 2 */
+.title-wrapper {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.28);
+    /*opacity: 0;*/
+}
+.home-title {
+    display: block;
+    margin: 19% 0 0 7%;
+    font-weight: 400;
+    font-size: 5.1em;
+    width: 100%;
+    letter-spacing: -3px;
+    color: #000;
+}
+.home-sub-title {
+    display: block;
+    margin: -6px 0 0 15%;
+    font-size: 6.4em;
+    width: 100%;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.home-logo-toulouse {
+    max-width: 54%;
+    margin: 10px 23%;
+}
+.home-logo-wcs {
+    position: absolute;
+    bottom: 0;
+    max-width: 28%;
+    margin: 0 36%;
+}
+
+#countdown {
+    float: right;
+    height: 100%;
+    margin-top: 60vh;
+    font-size: 6.5em;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #E91E63;
+    -webkit-transform: scale(1,1.6);
+    -moz-transform: scale(1,1.6);
+    -ms-transform: scale(1,1.6);
+    -o-transform: scale(1,1.6);
+    transform: scale(1,1.6);
+}
+
+.arrow-down {
+    display: block;
+    position: relative;
+    bottom: -20px;
+    max-width: 15%;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+    opacity: 0.9;
+}
+.arrow-down:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+/* bootstrap overrides */
+
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    margin: 20px 10px;
+    background: none;
+    border: none;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    background: none;
+    padding: 9px 10px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 45px;
+    height: 5px;
+    border-radius: 0;
+}
+.navbar-collapse {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+.menu-ul {
+    min-height: 87.5vh !important;
+    width: 28vw;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 9999;
+}
+.menu-li {
+    flex: 1 auto;
+    font-weight: bold;
+    font-size: 22px;
+}
+.menu-li > a:hover {
+    color: #E91E63!important;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .home-title {
+        margin: 14% 0 0 4%;
+        font-weight: 400;
+        font-size: 3.7em;
+        width: 100%;
+        letter-spacing: -3px;
+        color: #000;
+    }
+    .home-sub-title {
+        margin-left: 11%;
+        font-size: 5.0em;
+        width: 100%;
+        letter-spacing: 0px;
+        color: #080808;
+    }
+}
+@media (min-width: 480px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+}
+
+/* FIN HOME */
+
+
+/*
+    ######################################################################################
+*/
+/* PAGE 2 - ENJEUX OPEN DATA */
 
 .page2-background {
-/*	background-image: url("../img/markus-spiske-109588.jpg"); */
-	background-image: url("../img/mark-solarski-209233_v2.jpg");
-/*	background-image: url("../img/networking-1626666.jpg"); */
-	-webkit-background-size: cover;
+    background-image: url("../img/bg_pages.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: 0% -30%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-/*    height: 100vh;
-    width: 100vw;*/
-    background-repeat: no-repeat;
-	z-index: 1;
-/*    opacity: 0.2; */
 }
 
 .p2-title1 {
 	color: #000000;
-	font-size: 3.2em;
+    font-weight: 300;
+	font-size: 3.5em;
 	padding: 0;
 	text-align: center;
 	border-bottom: 1px solid #000;
-	line-height: 0.1em;
+	line-height: 0em;
 	margin: 50px 100px 50px 100px;
 }
 
@@ -71,88 +262,111 @@ h1 span {
     padding: 0px 50px; 
 }
 
-h3.p2-title2 {
+.p2-title2 {
 	color: #000000;
+    font-weight: 300;
 	line-height: 1.5em;
 	padding: 1%;
 	margin: 0 10% 0 10%;
-	background-color: rgba(251, 168, 88, 0.35);
+    background-color: rgba(190, 190, 190, 0.5);
 	text-align: center;
-	border-radius: 50px 50px 0px 0px;
-/*	color: #FBA858; */
+	border-radius: 15px 15px 5px 5px;
+    border: 2px solid #E91E63;
 	transform: translate(0%, 18%);
 }
 
-h2.p2-title2 {
-	line-height: 1.5em;
-	padding: 1%;
-	margin: 0 10% 0 10%;
-	background-color: rgba(233, 30, 99, 0.35);
-	text-align: center;
-	border-radius: 0px 0px 7px 7px;
-	transform: translate(0%, 10%);
-/*	color: #FBA858; */
-}
-
 .p2-para1 {
+    height: 250px;
 	color: #000000;
-	padding: 8%;
-	margin-left: 5%;
+    font-weight: 300;
+	padding: 3% 5% 0% 5%;
+    margin-left: 5%;
 	margin-top: 5%;
 	text-align: justify;
-	background-color: rgba(251, 168, 88, 0.35);
+    background-color: rgba(255, 255, 255, 0.8);
 	font-size: 2em;
-	border-radius: 50px 50px 0px 0px;
+	border-radius: 15px 15px 5px 5px;
+    border: 2px solid #FBA858;
 	transform: translate(0%, 2%);
-	padding-bottom: 0;
-}
-
-.p2-list {
-	color: #000000;
-	list-style-type: disc;
-	padding: 8%;
-	margin-left: 5%;
-	text-align: justify;
-	font-size: 2em;
-	background-color: rgba(233, 30, 99, 0.35);
-	line-height: 1.5em;
-	border-radius: 0px 0px 7px 7px;
-	transform: translate(0%, -2%);
 }
 
 .p2-para2 {
-	color: #000000;
-	padding: 8%;
-	margin-right: 5%;
-	margin-top: 4.5%;
-	text-align: justify;
-	background-color: rgba(233, 30, 99, 0.35);
-	font-size: 2em;
-	border-radius: 50px 50px 0px 0px;
-	transform: translate(0%, 3.5%);
-	padding-bottom: 11.5%;
+    height: 250px;
+    color: #000000;
+    font-weight: 300;
+    padding: 3% 5% 0% 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    text-align: justify;
+    background-color: rgba(230, 230, 230, 0.8);
+   /* background-color: rgba(190, 190, 190, 0.8);*/
+    font-size: 2em;
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid #FBA858;
+    transform: translate(0%, 2%);
+}
+
+.p2-list {
+    height: 280px;
+    color: #000000;
+    font-weight: 300;
+    padding: 3% 8% 0% 8%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    text-align: justify;
+	background-color: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+	border-radius: 15px 15px 5px 5px;
+    border: 2px solid #FBA858;
+	transform: translate(0%, -2%);
 }
 
 .logo-container {
-	position: relative;
-	height: 100px;
-	padding: 8%;
-	margin-right: 5%;
+    position: relative;
+    height: 250px;
 	text-align: justify;
 	font-size: 2em;
-	background-color: rgba(251, 168, 88, 0.35);
-	line-height: 1.5em;
-	border-radius: 0px 0px 7px 7px;
-	transform: translate(0%, -2%);
-	padding-bottom: 40%;
+	background-color: rgba(190, 190, 190, 0.8);
+    margin-right: 5%;
+    margin-bottom: 15%;
+    height: 150%;
+	border-radius: 15px 15px 5px 5px;
+    border: 2px solid #FBA858;
+	padding-bottom: 10%;
 }
 
 .p2-logo-opendata {
 	position: absolute;
-	width: 65%;
-	border: 1.2px solid #E91E63;
+	width: 50%;
+	border: 2px solid #E91E63;
 	border-radius: 7px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -20%);
 }
+
+
+/* FIN PAGE OPEN DATA */
+
+
+/* PAGE PROGRAMME */
+
+/* FIN PAGE PROGRAMME */
+
+
+/* PAGE ORGANISATEURS */
+
+/* FIN PAGE ORGANISATEURS */
+
+
+/* PAGE PARTENAIRES */
+
+/* FIN PAGE PARTENAIRES */
+
+
+
+/* PAGE ESPACE PRESSE */
+
+/* FIN PAGE ESPACE PRESSE */

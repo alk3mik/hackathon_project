@@ -31,6 +31,20 @@ $( document ).ready(function() {
        $(this).hide();
     });
 
+    // adjust height of text blocks in page 2 (open-Data)
+    if (viewportW > 991 ) {
+        let textHeigths = $(".same-height").map(function() {
+                return $(this).height();
+            }).get(),
+            maxHeight = Math.max.apply(null, textHeigths);
+        $(".same-height").height(maxHeight);
+        $('.center-it-vertical').map(function() {
+            let parentH = $(this).closest('p').height();
+            $( this ).css( 'top', ( ( parentH - $( this ).height() ) / 2 ) + 'px' );
+        });
+    }
+
+
 });
 
 

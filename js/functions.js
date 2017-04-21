@@ -27,23 +27,35 @@ $( document ).ready(function() {
             }, 800);
     }
 
-    $('.navbar-toggle').on('click', function() {
+    $('.navbar-toggle').on('click', function(e) {
+        setTimeout( function() {
+            $('.navbar-collapse.in').addClass('rotate-y-anim');
+        }, 360);
        $(this).hide();
     });
+    // $('.menu-li')
 
+    $('.arrow-down').on('click', function() {
+       $(body).scrollTo('#open-data');
+    });
     // adjust height of text blocks in page 2 (open-Data)
     if (viewportW > 991 ) {
-        let textHeigths = $(".same-height").map(function() {
+        let divHeigths = $(".center-it-vertical").map(function() {
                 return $(this).height();
             }).get(),
-            maxHeight = Math.max.apply(null, textHeigths);
-        $(".same-height").height(maxHeight);
-        $('.center-it-vertical').map(function() {
-            let parentH = $(this).closest('p').height();
-            $( this ).css( 'top', ( ( parentH - $( this ).height() ) / 2 ) + 'px' );
-        });
-    }
+            maxHeight = Math.max.apply(null, divHeigths);
 
+        $(".center-it-vertical").height(maxHeight);
+
+        // $('.re-padd-it').map(function() {
+        //     let parentH = $(this).closest('.center-it-vertical').height();
+        //     $( this ).css( 'top', ( ( parentH - $( this ).height() ) / 2 ) + 'px' );
+        // });
+    }
+    $('.open-data-link').on('click', function(e) {
+       e.preventDefault();
+        window.open('https://data.toulouse-metropole.fr/page/home/', '_blank');
+    });
 
 });
 

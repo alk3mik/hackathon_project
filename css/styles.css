@@ -23,6 +23,7 @@
 
 body {
     font-family: Roboto, sans-serif;
+    color: #262626;
 }
 /*
     Definition classes
@@ -41,6 +42,15 @@ h2 {
     font-weight: 100;
 }
 
+.no-padding {
+    padding: 0!important;
+}
+
+/*.row {*/
+    /*-webkit-box-shadow: 0px 20px 30px 0px rgba(135,132,135,0.57);*/
+    /*-moz-box-shadow: 0px 20px 30px 0px rgba(135,132,135,0.57);*/
+    /*box-shadow: 0px 20px 30px 0px rgba(135,132,135,0.57);*/
+/*}*/
 
 .home-viewport {
     background-image: url("../img/bg_home.jpg");
@@ -234,93 +244,102 @@ h2 {
 */
 /* PAGE 2 - ENJEUX OPEN DATA */
 
-.page2-background {
+.page-2-content {
     background-image: url("../img/bg_pages.png");
-    height: 100%;
+    height: 100vh;
     background-attachment: fixed;
-    background-position: 0% -30%;
+    background-position: 0% -150%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding: 0 1%;
 }
 
-.p2-title1 {
-	color: #000000;
+.page-2 h1 {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
     font-weight: 300;
-	font-size: 3.5em;
-	padding: 0;
-	text-align: center;
-	border-bottom: 1px solid #000;
-	line-height: 0em;
-	margin: 50px 100px 50px 100px;
+    font-size: 3.5em;
+    padding: 0;
+    text-align: center;
+    line-height: 0em;
+    border-bottom: 1px solid #000;
+}
+.page-2 h1 span {
+    padding: 0 38px;
+    background-color: #fff;
 }
 
-h1 span { 
-    background: #FFF; 
-    padding: 0px 50px; 
+.page-2 > h1 > i {
+    font-weight: bold;
 }
 
-.p2-title2 {
-	color: #000000;
+.page-2 h2 {
     font-weight: 300;
 	line-height: 1.5em;
-	padding: 1%;
-	margin: 0 10% 0 10%;
+	padding: 0 1%;
     background-color: rgba(190, 190, 190, 0.5);
 	text-align: center;
-	border-radius: 15px 15px 5px 5px;
-    border: 2px solid #E91E63;
-	transform: translate(0%, 18%);
+	border-radius: 15px;
+    border: 1px solid #E91E63;
 }
 
-.p2-para1 {
-    height: 250px;
-	color: #000000;
-    font-weight: 300;
-	padding: 3% 5% 0% 5%;
-    margin-left: 5%;
-	margin-top: 5%;
-	text-align: justify;
+@media all and (min-width: 991px) {
+    .text-block-wrapper {
+        display: table;
+    }
+    .text-block {
+        height: 32vh;
+        vertical-align: middle;
+    }
+
+}
+
+.text-block {
+    padding: 12px 16px;
+    border: 2px solid #FBA858;
     background-color: rgba(255, 255, 255, 0.8);
-	font-size: 2em;
-	border-radius: 15px 15px 5px 5px;
-    border: 2px solid #FBA858;
-	transform: translate(0%, 2%);
 }
 
-.p2-para2 {
-    height: 250px;
-    color: #000000;
-    font-weight: 300;
-    padding: 3% 5% 0% 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 15%;
-    text-align: justify;
-    background-color: rgba(230, 230, 230, 0.8);
-   /* background-color: rgba(190, 190, 190, 0.8);*/
-    font-size: 2em;
-    border-radius: 15px 15px 5px 5px;
-    border: 2px solid #FBA858;
-    transform: translate(0%, 2%);
+.top-left {
+    margin: 8px 1% 8px 0;
+    border-radius: 15px 0 0 0;
+}
+.top-right {
+    margin: 8px 0 8px 1%;
+    border-radius: 0 15px 0 0;
+}
+.bottom-left {
+    margin: 8px 1% 8px 0;
+    border-radius: 0 0 15px 0;
+}
+.bottom-right {
+    margin: 8px 0 8px 1%;
+    border-radius: 0 0 0 15px;
 }
 
-.p2-list {
-    height: 280px;
-    color: #000000;
+.page-2 p {
+	color: #000000;
+    font-size: 1.6em;
     font-weight: 300;
-    padding: 3% 8% 0% 8%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 15%;
-    text-align: justify;
-	background-color: rgba(255, 255, 255, 0.8);
-    font-size: 2em;
-	border-radius: 15px 15px 5px 5px;
-    border: 2px solid #FBA858;
-	transform: translate(0%, -2%);
+	text-align: justify;
+	/*transform: translate(0%, 2%);*/
+}
+.center-it-vertical {
+    position: relative;
+}
+
+.page-2-ul {
+    color: #fba858;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.7em;
+    list-style: square;
+    margin: 24px 30px;
 }
 
 .logo-container {
@@ -370,3 +389,18 @@ h1 span {
 /* PAGE ESPACE PRESSE */
 
 /* FIN PAGE ESPACE PRESSE */
+
+@media all and (max-width: 991px) {
+    .top-left {
+        border-radius: 8px;
+    }
+    .top-right {
+        border-radius: 8px;
+    }
+    .bottom-left {
+        border-radius: 8px;
+    }
+    .bottom-right {
+        border-radius: 8px;
+    }
+}

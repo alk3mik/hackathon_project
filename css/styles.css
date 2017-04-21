@@ -64,6 +64,8 @@ h2 {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+/*    padding: 0 1%; */
 }
 
 .title-wrapper {
@@ -290,7 +292,7 @@ h2 {
     background-image: url("../img/bg_pages.png");
     height: 100vh;
     background-attachment: fixed;
-    background-position: 0% -180%;
+    background-position: 0% -110%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -389,7 +391,7 @@ h2 {
     list-style: square;
     margin: 24px 30px;
 }
-
+/*
 .logo-container {
     position: relative;
     height: 250px;
@@ -413,7 +415,7 @@ h2 {
 	left: 50%;
 	transform: translate(-50%, -20%);
 }
-
+*/
 
 /* FIN PAGE OPEN DATA */
 
@@ -424,6 +426,110 @@ h2 {
 
 
 /* PAGE ORGANISATEURS */
+
+.page-4-content {
+    background-image: url("../img/bg_pages.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 0% -110%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0 1%;
+}
+
+.page-4 h1 {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    font-weight: 300;
+    font-size: 3.5em;
+    padding: 0;
+    text-align: center;
+    line-height: 0em;
+    border-bottom: 1px solid #E91E63;
+}
+.page-4 h1 span {
+    padding: 0 38px;
+    background-color: #fff;
+}
+
+.page-4 > h1 > i {
+    font-weight: bold;
+}
+
+.page-4 h2 {
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 0 1%;
+    /*background-color: rgba(190, 190, 190, 0.5);*/
+    text-align: center;
+    /*border-radius: 15px;*/
+    /*border: 1px solid #E91E63;*/
+}
+.taller {
+    font-size: 1.4em;
+}
+
+.flexit {
+    flex: 0 1 auto;
+}
+.text-block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 200;
+    /*display: inline-block;*/
+    padding: 30px 69px;
+    /*border: 2px solid #FBA858;*/
+    background-color: rgba(255, 255, 255, 1);
+}
+.open-data-link {
+    width: 100%;
+}
+.open-data-link:hover {
+    border: 1px solid #E91E63;
+    box-shadow: 2px 1px 6px #262626;
+}
+.top-left {
+    margin: 8px 1% 8px 0;
+    /*border-radius: 15px 0 0 15px;*/
+}
+.top-right {
+    margin: 8px 0 8px 1%;
+    /*border-radius: 0 15px 15px 0;*/
+}
+.bottom-left {
+    margin: 8px 1% 8px 0;
+    /*border-radius: 0 0 15px 0;*/
+}
+.bottom-right {
+    margin: 8px 0 8px 1%;
+    /*border-radius: 0 0 0 15px;*/
+}
+
+.page-4 p {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 200;
+    text-align: justify;
+    /*transform: translate(0%, 2%);*/
+}
+.center-it-vertical {
+    position: relative;
+}
+
+.page-2-ul {
+    /*color: #fba858;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    list-style: square;
+    margin: 24px 30px;
+}
 
 /* FIN PAGE ORGANISATEURS */
 

@@ -28,15 +28,21 @@ $( document ).ready(function() {
     }
 
     $('.navbar-toggle').on('click', function(e) {
-        setTimeout( function() {
-            $('.navbar-collapse.in').addClass('rotate-y-anim');
-        }, 360);
-       $(this).hide();
+            $('.navbar-collapse').show().addClass('rotate-y-anim');
+            $('.navbar-toggle').fadeOut(200);
     });
-    // $('.menu-li')
+    $('.menu-li').on('click', function(){
+        $('.navbar-collapse').removeClass('rotate-y-anim');
+        $('.navbar-toggle').fadeIn(500);
+    });
+
+    $('.close-menu').on('click', function() {
+        $('.navbar-collapse').removeClass('rotate-y-anim');
+        $('.navbar-toggle').fadeIn(500);
+    });
 
     $('.arrow-down').on('click', function() {
-       $(body).scrollTo('#open-data');
+       $(document).scrollTo('#open-data');
     });
     // adjust height of text blocks in page 2 (open-Data)
     if (viewportW > 991 ) {

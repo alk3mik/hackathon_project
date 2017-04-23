@@ -1,4 +1,10 @@
 /* bootstrap overrides */
+/*--- sm and md only --- */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+}
 .nav-wrap {
     position: fixed;
     z-index: 9999;
@@ -30,6 +36,7 @@
     border-radius: 0;
 }
 .navbar-collapse {
+    display: none;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.90);
     transform-origin: left bottom;

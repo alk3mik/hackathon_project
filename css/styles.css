@@ -129,6 +129,105 @@ h2 {
     cursor: pointer;
     opacity: 1;
 }
+/* bootstrap overrides */
+.nav-wrap {
+    position: fixed;
+    z-index: 9999;
+    -moz-perspective: 500vw; /* Chrome, Safari, Opera */
+    -o-perspective: 50vw; /* Chrome, Safari, Opera */
+    -webkit-perspective: 50vw; /* Chrome, Safari, Opera */
+    perspective: 100vw;
+}
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    margin: 20px 10px;
+    background: none;
+    border: none;
+}
+.navbar-toggle {
+    position: fixed;
+    float: right;
+    background: none;
+    padding: 9px 10px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 45px;
+    height: 5px;
+    border-radius: 0;
+}
+.navbar-collapse {
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.90);
+    transform-origin: left bottom;
+    -moz-perspective: 50vw; /* Chrome, Safari, Opera */
+    -o-perspective: 50vw; /* Chrome, Safari, Opera */
+    -webkit-perspective: 50vw; /* Chrome, Safari, Opera */
+    perspective: 50vw;
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg); /* Safari */
+    transform: rotateY(90deg);
+
+
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.rotate-y-anim {
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.rotate-y-anim-back {
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+
+}
+.menu-ul {
+    min-height: 87.5vh !important;
+    line-height: 87.5vh !important;
+    width: 30vw;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+.menu-li {
+    flex: 1 auto;
+    font-weight: bold;
+    font-size: 22px;
+}
+.menu-li > a:hover {
+    color: #E91E63!important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.close-menu {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 8px -5px 0 0;
+    opacity: 0.7;
+}
+.close-menu:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .home-title {
@@ -171,12 +270,12 @@ h2 {
     }
 
     .navbar-collapse.collapse {
-        display: none !important;
+        /*display: none !important;*/
     }
 
     .navbar-nav {
         float: none !important;
-        margin-top: 7.5px;
+        margin-top: 7.5vh;
     }
 
     .navbar-nav > li {

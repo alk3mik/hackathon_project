@@ -69,9 +69,8 @@ h2 {
 .title-wrapper {
     display: inline-block;
     position: relative;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.28);
-    /*opacity: 0;*/
+    background-image: url("../img/home_ring.png");
+    background-size: contain;
 }
 .home-title {
     display: block;
@@ -196,9 +195,6 @@ h2 {
 
 }
 .menu-ul {
-    min-height: 87.5vh !important;
-    line-height: 87.5vh !important;
-    width: 30vw;
     display: flex !important;
     flex-direction: column;
     justify-content: space-around;
@@ -208,7 +204,6 @@ h2 {
 .menu-li {
     flex: 1 auto;
     font-weight: bold;
-    font-size: 22px;
 }
 .menu-li > a:hover {
     color: #E91E63!important;
@@ -216,7 +211,6 @@ h2 {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000;
 }
-
 .close-menu {
     width: 30px;
     height: 30px;
@@ -228,6 +222,7 @@ h2 {
     opacity: 1;
     cursor: pointer;
 }
+
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .home-title {

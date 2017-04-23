@@ -1,4 +1,14 @@
 /*--- xs only ---*/
 @media (max-width: 767px) {
-
+    .close-menu {
+        width: 60px;
+        height: 60px;
+        float: right;
+        margin: 10px -5px 0 0;
+        opacity: 0.7;
+    }
+    .close-menu:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 }

@@ -33,7 +33,7 @@
         /*font-weight: 200;*/
         text-align: justify;
     }
-    .blurp {
+    .countdown-num {
         flex: 1 1 auto;
         height: 100vh;
         padding: 50% 0;

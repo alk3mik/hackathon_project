@@ -101,10 +101,11 @@ h2 {
     margin: 0 36%;
 }
 
-#countdown {
-    flex: auto;
-    font-size: 6.5em;
-    font-weight: 100;
+.countdown-num {
+    opacity: 0;
+}
+
+.countdown-global {
     color: #ffffff;
     text-align: justify;
     text-shadow: 1px 1px 1px #E91E63;
@@ -113,19 +114,15 @@ h2 {
     -ms-transform: scale(1,1.6);
     -o-transform: scale(1,1.6);
     transform: scale(1,1.6);
-    line-height: 0.8em;
-    opacity: 0;
 }
 
-.countdown-num {
-    font-size: 0.8em;
-    letter-spacing: 1.8em;
-}
-.counthome {
-
+td {
+    padding: 8px;
 }
 
 .arrow-down {
+    display: block;
+    margin: 0 auto;
     font-size: 3.5em;
     text-align: center;
     opacity: 0.5;

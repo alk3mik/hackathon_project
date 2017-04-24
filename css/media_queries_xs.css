@@ -1,5 +1,5 @@
 /*--- xs only ---*/
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
     .close-menu {
         width: 60px;
         height: 60px;
@@ -11,4 +11,18 @@
         opacity: 1;
         cursor: pointer;
     }
+
+    .countdown-wrapper {
+        display: block;
+    }
+    #countdown {
+        font-size: 5.8em;
+        /*font-weight: 200;*/
+        text-align: justify;
+    }
+    .blurp {
+        flex: none;
+    }
+
+
 }

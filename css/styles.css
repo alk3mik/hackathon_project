@@ -69,8 +69,9 @@ h2 {
 .title-wrapper {
     display: inline-block;
     position: relative;
-    background-image: url("../img/home_ring.png");
+    background-image: url("../img/home_txt_wrapp.svg");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .home-title {
     display: block;
@@ -101,28 +102,34 @@ h2 {
 }
 
 #countdown {
-    float: right;
-    height: 100%;
-    margin-top: 60vh;
+    flex: auto;
     font-size: 6.5em;
     font-weight: 100;
     color: #ffffff;
+    text-align: justify;
     text-shadow: 1px 1px 1px #E91E63;
     -webkit-transform: scale(1,1.6);
     -moz-transform: scale(1,1.6);
     -ms-transform: scale(1,1.6);
     -o-transform: scale(1,1.6);
     transform: scale(1,1.6);
+    line-height: 0.8em;
+    opacity: 0;
+}
+
+.countdown-num {
+    font-size: 0.8em;
+    letter-spacing: 1.8em;
+}
+.counthome {
+
 }
 
 .arrow-down {
-    display: block;
-    position: relative;
-    bottom: -20px;
-    max-width: 15%;
-    margin: 0 auto;
-    transform: rotate(-90deg);
-    opacity: 0.9;
+    font-size: 3.5em;
+    text-align: center;
+    opacity: 0.5;
+    color: #ffffff;
 }
 .arrow-down:hover {
     cursor: pointer;

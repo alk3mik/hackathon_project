@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media  all and  (min-width: 1200px) {
     .menu-ul {
         min-height: 87.5vh !important;
         line-height: 87.5vh !important;
@@ -6,5 +6,10 @@
     }
     .menu-li {
         font-size: 2.2em;
+    }
+    #countdown {
+        float: right;
+        height: 100vh;
+        margin-top: 60vh;
     }
 }

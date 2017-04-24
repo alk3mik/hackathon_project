@@ -1,11 +1,11 @@
 /*--- md and up ---*/
-@media (min-width: 992px) {
+@media  all and  (min-width: 992px) {
 
 }
 
 
 /*--- sm and md only --- */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media  all and (min-width: 768px) and (max-width: 1199px) {
     .menu-li {
         margin: auto;
         font-size: 4em;
@@ -22,10 +22,27 @@
         opacity: 1;
         cursor: pointer;
     }
+    .countdown-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100vh;
+    }
+    #countdown {
+        font-size: 5.8em;
+        /*font-weight: 200;*/
+        text-align: justify;
+    }
+    .blurp {
+        flex: 1 1 auto;
+        height: 100vh;
+        padding: 50% 0;
+    }
+
 }
 
 /*--- xs, sm and md only --- */
-@media (max-width: 1199px) {
+@media  all and  (max-width: 1199px) {
     .menu-ul {
         width: 92vw!important;
         min-height: 90vh!important;

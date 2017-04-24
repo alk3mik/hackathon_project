@@ -1,0 +1,43 @@
+/*--- md and up ---*/
+@media (min-width: 992px) {
+
+}
+
+
+/*--- sm and md only --- */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .menu-li {
+        margin: auto;
+        font-size: 4em;
+        text-align: center;
+    }
+    .close-menu {
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin: 10px -5px 0 0;
+        opacity: 0.7;
+    }
+    .close-menu:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+/*--- xs, sm and md only --- */
+@media (max-width: 1199px) {
+    .menu-ul {
+        width: 92vw!important;
+        min-height: 90vh!important;
+        line-height: 90vh!important;
+        padding: 0;
+        list-style-type: none!important;
+        -webkit-padding-start: 0!important;
+
+    }
+    .menu-li {
+        margin: auto;
+        font-size: 4em;
+        text-align: center;
+    }
+}

@@ -3,15 +3,21 @@
     <head>
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>WILD CODE SCHOOL # HACKATHON</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/media_queries_xs.css">
+        <link rel="stylesheet" href="css/media_queries_md.css">
+        <link rel="stylesheet" href="css/media_queries_lg.css">
     </head>
     <body>
 
     <div class="container-fluid">
+
         <div class="nav-wrap">
 
         <nav class="navbar navbar-default">
@@ -26,11 +32,12 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <img class="close-menu" src="img/close.png"/>
                     <ul class="nav navbar-nav menu-ul">
                         <li class="menu-li"><a href="#open-data">Enjeux de l'Open Data</a></li>
                         <li class="menu-li"><a href="#programme">Le programmme</a></li>
                         <li class="menu-li"><a href="#organisateur">Organisateur</a></li>
-                        <li class="menu-li"><a href="#partenaire">Partenaires</a></li>
+                        <li class="menu-li"><a href="#partenaires">Partenaires</a></li>
                         <li class="menu-li"><a href="#espace-presse">Espace Presse</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -39,14 +46,12 @@
 
         <div class="row home-viewport shadow-it">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 title-wrapper">
-                <h1 class="home-title">HACKATHON</h1>
-                <h2 class="home-sub-title">OPEN DATA</h2>
-                <img class="home-logo-toulouse" alt="toulouse" src="img/logo_toulouse_420.png">
-                <img class="home-logo-wcs" alt="wild-code-school" src="img/logo_wcs_shadow.png">
             </div>
-            <div class="col-xs-12 col-md-6 pull-right">
-                <h4 id="countdown"></h4>
-                <img class="arrow-down" alt="down" src="img/left-arrow.png">
+            <div class="col-xs-12 col-md-7 pull-right countdown-wrapper">
+                <div class="blurp">
+                    <h4 id="countdown"></h4>
+                </div>
+                <i class="arrow-down glyphicon glyphicon-chevron-down" alt="down"></i>
             </div>
         </div>
 
@@ -114,13 +119,14 @@
 
 
         <!-- page 3 début PROGRAMME-->
-        <div class="row">
+        <div id="programme" class="row">
 
         </div>
         <!-- page 3 fin -->
 
 
         <!-- page 4 début ORGANISATEURS-->
+
          <div id="organisateurs" class="row page-2">
         	<div class="col-xs-12">
                 <h1><span>Organisateurs</i></span></h1>
@@ -165,23 +171,16 @@
             </div> <!-- row page-4-content -->
         	
  
-
-
-
-
-
-Logo WCS + logo Toulouse Métropole
-        </div>
         <!-- page 4 fin -->
 
         <!-- page 5 début PARTENAIRES-->
-        <div class="row">
+        <div id="partenaires" class="row">
 
         </div>
         <!-- page 5 fin -->
 
         <!-- page 6 début ESPACE PRESSE-->
-        <div class="row">
+        <div id="espace-press" class="row">
 
         </div>
         <!-- page 6 fin -->
@@ -189,8 +188,10 @@ Logo WCS + logo Toulouse Métropole
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Custom Bootstrap - only grid, glyphicons and transition -->
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
 
     <script type="application/javascript" src="js/functions.js"></script>

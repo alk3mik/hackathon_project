@@ -71,9 +71,9 @@ h2 {
 .title-wrapper {
     display: inline-block;
     position: relative;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.28);
-    /*opacity: 0;*/
+    background-image: url("../img/home_txt_wrapp.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .home-title {
     display: block;
@@ -104,28 +104,34 @@ h2 {
 }
 
 #countdown {
-    float: right;
-    height: 100%;
-    margin-top: 60vh;
+    flex: auto;
     font-size: 6.5em;
     font-weight: 100;
     color: #ffffff;
+    text-align: justify;
     text-shadow: 1px 1px 1px #E91E63;
     -webkit-transform: scale(1,1.6);
     -moz-transform: scale(1,1.6);
     -ms-transform: scale(1,1.6);
     -o-transform: scale(1,1.6);
     transform: scale(1,1.6);
+    line-height: 0.8em;
+    opacity: 0;
+}
+
+.countdown-num {
+    font-size: 0.8em;
+    letter-spacing: 1.8em;
+}
+.counthome {
+
 }
 
 .arrow-down {
-    display: block;
-    position: relative;
-    bottom: -20px;
-    max-width: 15%;
-    margin: 0 auto;
-    transform: rotate(-90deg);
-    opacity: 0.9;
+    font-size: 3.5em;
+    text-align: center;
+    opacity: 0.5;
+    color: #ffffff;
 }
 .arrow-down:hover {
     cursor: pointer;
@@ -163,6 +169,7 @@ h2 {
     border-radius: 0;
 }
 .navbar-collapse {
+    opacity: 0;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.90);
     transform-origin: left bottom;
@@ -183,21 +190,20 @@ h2 {
 }
 
 .rotate-y-anim {
-
-    -moz-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    -webkit-transition: all 400ms ease;
-    transition: all 800ms ease;
-
     -moz-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
+    opacity: 1;
+}
+.rotate-y-anim-back {
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+
 }
 .menu-ul {
-    min-height: 87.5vh !important;
-    line-height: 87.5vh !important;
-    width: 25vw;
     display: flex !important;
     flex-direction: column;
     justify-content: space-around;
@@ -207,7 +213,6 @@ h2 {
 .menu-li {
     flex: 1 auto;
     font-weight: bold;
-    font-size: 22px;
 }
 .menu-li > a:hover {
     color: #E91E63!important;
@@ -215,6 +220,18 @@ h2 {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000;
 }
+.close-menu {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 8px -5px 0 0;
+    opacity: 0.7;
+}
+.close-menu:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .home-title {
@@ -257,12 +274,12 @@ h2 {
     }
 
     .navbar-collapse.collapse {
-        display: none !important;
+        /*display: none !important;*/
     }
 
     .navbar-nav {
         float: none !important;
-        margin-top: 7.5px;
+        margin-top: 7.5vh;
     }
 
     .navbar-nav > li {

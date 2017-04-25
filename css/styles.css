@@ -304,7 +304,7 @@ td {
 .page-2 h1 {
     display: block;
     width: 80%;
-    margin: 1em auto;
+    margin: 60px auto 1em;
     font-weight: 300;
     font-size: 3.5em;
     padding: 0;
@@ -343,7 +343,7 @@ td {
     justify-content: space-around;
     font-weight: 200;
     /*display: inline-block;*/
-    padding: 30px 69px;
+    padding: 10px 69px;
     /*border: 2px solid #FBA858;*/
     background-color: rgba(255, 255, 255, 1);
 }
@@ -421,7 +421,126 @@ td {
 
 
 /* PAGE PROGRAMME */
+#programme{
+    background-image: url("../img/bg_pages.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 0% -110%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0 1%;
+}
+#titleProgramme{
+    color: #EED5A2;
+    font-size: 3em;
+    position: absolute;
+    left: 10%;
+    margin-top: 5em;
+    text-transform: uppercase;
+}
 
+#wrapTitleJeudi{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-align: center;
+    background-color: #FFF;
+    font-size: 7em;
+    color: #EED5A2;
+    height: 50vh;
+    margin-top: 10vh;
+    padding-right: 7.5vw;
+    position: static;
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+#wrapTitleJeudi{
+    cursor: pointer;
+}
+
+#wrapTitleVendredi{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-align: center;
+    background-color: #FFF;
+    font-size: 7em;
+    color: #EED5A2;
+    height: 70vh;
+    margin-top: 10vh;
+    padding-right: 7.5vw;
+    position: static;
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+#wrapTitleVendredi{
+    cursor: pointer;
+}
+#wrapProgJeudi{
+    background-color: #FFF;
+    font-size: 1.5em;
+    height: 50vh;
+    padding-top: 1em;
+    margin-top: 10vh;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+#wrapProgJeudi *{
+    padding: 0 5%;
+    margin: 0.5em 5% 0 0;
+}
+#wrapProgJeudi p:last-of-type{
+    margin-top: 2em !important;
+}
+#wrapProgVendredi{
+    background-color: #FFF;
+    font-size: 1.5em;    
+    height: 70vh;
+    top: 10vh;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+#wrapProgVendredi *{
+    margin: 0.5em 7.5% 0 7.5%;
+}
+#wrapProgVendredi p:last-of-type{
+    margin-top: 2em !important;
+}
+.noDispl{
+    display: none;
+}
+.progTime{
+    color: #EED5A2;
+    margin-top: 1em;
+}
+.dayInWrapProg{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em !important;
+}
+/*.transitionOut{
+    top: -100vh;
+    opacity: 0
+}
+.transitionIn{
+    top: 00vh;
+    opacity: 1;
+}
+.transitionProg{
+    -webkit-transition: top 3s ease-out;  
+    -moz-transition: top 3s ease-out;
+    -o-transition: top 3s ease-out;  
+    transition: top 3s ease-in;  
+}*/
 /* FIN PAGE PROGRAMME */
 
 
@@ -443,7 +562,7 @@ td {
 .page-4 h1 {
     display: block;
     width: 80%;
-    margin: 1em auto;
+    margin: 60px auto 1em;
     font-weight: 300;
     font-size: 3.5em;
     padding: 0;

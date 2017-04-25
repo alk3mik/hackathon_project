@@ -65,6 +65,8 @@ h2 {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+/*    padding: 0 1%; */
 }
 
 .title-wrapper {
@@ -73,6 +75,7 @@ h2 {
     background-image: url("../img/home_txt_wrapp.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .home-title {
     display: block;
@@ -102,10 +105,11 @@ h2 {
     margin: 0 36%;
 }
 
-#countdown {
-    flex: auto;
-    font-size: 6.5em;
-    font-weight: 100;
+.countdown-num {
+    opacity: 0;
+}
+
+.countdown-global {
     color: #ffffff;
     text-align: justify;
     text-shadow: 1px 1px 1px #E91E63;
@@ -114,19 +118,15 @@ h2 {
     -ms-transform: scale(1,1.6);
     -o-transform: scale(1,1.6);
     transform: scale(1,1.6);
-    line-height: 0.8em;
-    opacity: 0;
 }
 
-.countdown-num {
-    font-size: 0.8em;
-    letter-spacing: 1.8em;
-}
-.counthome {
-
+td {
+    padding: 8px;
 }
 
 .arrow-down {
+    display: block;
+    margin: 0 auto;
     font-size: 3.5em;
     text-align: center;
     opacity: 0.5;
@@ -232,23 +232,7 @@ h2 {
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .home-title {
-        margin: 14% 0 0 4%;
-        font-weight: 400;
-        font-size: 3.7em;
-        width: 100%;
-        letter-spacing: -3px;
-        color: #000;
-    }
-    .home-sub-title {
-        margin-left: 11%;
-        font-size: 5.0em;
-        width: 100%;
-        letter-spacing: 0px;
-        color: #080808;
-    }
-}
+
 @media (min-width: 480px) {
     .navbar-header {
         float: none;
@@ -320,7 +304,7 @@ h2 {
 .page-2 h1 {
     display: block;
     width: 80%;
-    margin: 1em auto;
+    margin: 60px auto 1em;
     font-weight: 300;
     font-size: 3.5em;
     padding: 0;
@@ -354,12 +338,12 @@ h2 {
     flex: 0 1 auto;
 }
 .text-block {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-weight: 200;
     /*display: inline-block;*/
-    padding: 30px 69px;
+    padding: 10px 69px;
     /*border: 2px solid #FBA858;*/
     background-color: rgba(255, 255, 255, 1);
 }
@@ -407,7 +391,7 @@ h2 {
     list-style: square;
     margin: 24px 30px;
 }
-
+/*
 .logo-container {
     position: relative;
     height: 250px;
@@ -431,7 +415,7 @@ h2 {
 	left: 50%;
 	transform: translate(-50%, -20%);
 }
-
+*/
 
 /* FIN PAGE OPEN DATA */
 
@@ -561,6 +545,60 @@ h2 {
 
 
 /* PAGE ORGANISATEURS */
+
+.page-4-content {
+    background-image: url("../img/bg_pages.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 0% -110%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0 1%;
+}
+
+.page-4 h1 {
+    display: block;
+    width: 80%;
+    margin: 60px auto 1em;
+    font-weight: 300;
+    font-size: 3.5em;
+    padding: 0;
+    text-align: center;
+    line-height: 0em;
+    border-bottom: 1px solid #E91E63;
+}
+.page-4 h1 span {
+    padding: 0 38px;
+    background-color: #fff;
+}
+
+.page-4 > h1 > i {
+    font-weight: bold;
+}
+
+.page-4 h2 {
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 0 1%;
+    /*background-color: rgba(190, 190, 190, 0.5);*/
+    text-align: center;
+    /*border-radius: 15px;*/
+    /*border: 1px solid #E91E63;*/
+}
+
+
+.page-2-ul {
+    /*color: #fba858;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.7em;
+    list-style: square;
+    margin: 24px 30px;
+}
 
 /* FIN PAGE ORGANISATEURS */
 

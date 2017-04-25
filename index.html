@@ -4,9 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height, target-densitydpi=medium-dpi" />
 
     <title>WILD CODE SCHOOL # HACKATHON</title>
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -18,9 +20,8 @@
 
 <body>
 
-    <div class="container-fluid">
+<div class="container-fluid">
 
-        <div class="nav-wrap">
 
             <nav class="navbar navbar-default">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -48,16 +49,56 @@
             </nav>
         </div>
 
-        <div class="row home-viewport shadow-it">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-5 title-wrapper">
-            </div>
-            <div class="col-xs-12 col-md-7 pull-right countdown-wrapper">
-                <div class="blurp">
-                    <h4 id="countdown"></h4>
-                </div>
-                <i class="arrow-down glyphicon glyphicon-chevron-down" alt="down"></i>
+    <div class="row home-viewport shadow-it">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-5 title-wrapper">
+        </div>
+        <div class="col-xs-12 col-md-7 countdown-wrapper">
+            <div class="countdown-num">
+                <table class="counter-table">
+                    <tr class="countdown-global" id="countdown"></tr>
+                    <tr class="countdown-global countdown-letter"><td>J</td><td></td><td>H</td><td></td><td>M</td><td></td><td>S</td></tr>
+                    <tr> <td colspan="7"><i class="arrow-down glyphicon glyphicon-chevron-down"></i></td>
+                    </tr>
+                </table>
             </div>
         </div>
+    </div>
+
+    <!-- PAGE 2 - ENJEUX OPEN DATA-->
+    <!-- début -->
+    <div id="open-data" class="row page-2">
+
+        <div class="col-xs-12">
+            <h1><span>Enjeux de l'<i>Open Data</i></span></h1>
+        </div>
+
+        <div class="col-xs-12 page-2-content">
+
+            <h2>
+                Toulouse Métropole et la Wild Code School Toulouse se mobilisent pour penser et bâtir <br>
+                <span class="taller">la ville intelligente de demain</span>
+            </h2>
+
+            <div class="row row-eq-height">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 same-height">
+
+                        <span class="center-it-vertical resize-it-vertical text-block top-left shadow-it">
+
+                        	<p class="flexit">
+                        		Dans le cadre de cet <i>Hackathon</i>, plusieurs défis seront proposés aux différentes équipes.
+                        		Sur l’une des thématiques prioritaires de Toulouse Métropole, elles auront pour objectif de proposer des services innovants pour imaginer cette ville du futur:
+                        	</p>
+
+                            <ul class="page-2-ul flexit">
+
+                            	<li> adaptable, efficiente et respirable </li>
+                            	<li> internationale et ancrée dans ses racines </li>
+                            	<li> du bien-vivre encore plus chaleureuse et intergénérationnelle </li>
+                            	<li> plus belle, propre et sûre </li>
+                            	<li> où la mobilité est plus simple et fluide </li>
+
+                        	</ul>
 
         <!-- PAGE 2 - ENJEUX OPEN DATA-->
         <!-- début -->
@@ -80,13 +121,21 @@
                             <li> plus belle, propre et sûre </li>
                             <li> où la mobilité est plus simple et fluide </li>
                         </ul>
-                        </span>
-                    </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 same-height">
-                        <span class="center-it-vertical text-block top-right shadow-it">
-                        <p class="flexit">Les équipes projets mobilisées auront pour principale contrainte technique d’utiliser le portail des données ouvertes du territoire de Toulouse Métropole:</p>
+                        </span>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 same-height">
+
+                        <span class="center-it-vertical resize-it-vertical text-block top-right shadow-it">
+
+                        	<p class="flexit">
+                        		Les équipes projets mobilisées auront pour principale contrainte technique d’utiliser le portail des données ouvertes du territoire de Toulouse Métropole:
+                        	</p>
+
                             <img class="flexit open-data-link" src="img/toulouse_openData.png" alt="link to Data Toulouse Metropole" class="p2-logo-opendata text-block bottom-right">
+
                             </span>
                     </div>
                 </div>
@@ -94,12 +143,13 @@
             </div>
             <!-- row page-2 -->
 
-        </div>
 
-        <!-- +++++++++++++++++++ Page2 fin +++++++++++++++++ -->
+    </div> <!-- row page-2 -->
+
+    <!-- +++++++++++++++++++ Page2 fin +++++++++++++++++ -->
 
 
-        <!-- page 3 début PROGRAMME-->
+  <!-- page 3 début PROGRAMME-->
         <div id="programme" class="row">
             <h3 id="titleProgramme">Programme</h3>
 
@@ -148,29 +198,71 @@
                 <div id="wrapTitleVendredi" class="col-md-offset-1 col-md-3 col-md-offset-2 transitionProg">Vendredi</div>
             </div>
 
+        </div> <!-- row page-2-content -->
+    <!-- page 3 fin -->
+
+
+    <!-- page 4 début ORGANISATEURS-->
+
+    <div id="organisateurs" class="row page-2">
+        <div class="col-xs-12">
+            <h1><span>Organisateurs</span></h1>
         </div>
-        <!-- page 3 fin -->
 
+        <div class="col-xs-12 page-4-content">
 
-        <!-- page 4 début ORGANISATEURS-->
-        <div id="organisateur" class="row">
+            <h2>
+                Cet Hackathon est un projet inédit initié dans une démarche collaborative par la Wild Code School Toulouse et Toulouse Métropole
+            </h2>
 
-        </div>
-        <!-- page 4 fin -->
+            <div class="row row-eq-height">
 
-        <!-- page 5 début PARTENAIRES-->
-        <div id="partenaires" class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 same-height">
 
-        </div>
-        <!-- page 5 fin -->
+                        <span class="center-it-vertical text-block top-left shadow-it">
 
-        <!-- page 6 début ESPACE PRESSE-->
-        <div id="espace-press" class="row">
+                        	<p class="flexit">
+                        		La Wild Code School est une école nouvelle génération dont l’objectif est de combler le défaut de compétences numériques en formant des développeurs à portée des entreprises en quête de talents. L’école s’est
+                        		installée à Toulouse en septembre 2016 avec le soutien de l’Agence d’attractivité So Toulouse et dispense depuis des formations courtes et intensives au développement mobile (Android / iOS).
+                        	</p>
 
-        </div>
-        <!-- page 6 fin -->
+                            <img class="flexit" src="img/logo_orange_horizontal.png" alt="Wild Code School Logo" class="p4-logo-opendata text-block bottom-left">
+
+                        </span>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 same-height">
+
+                        <span class="center-it-vertical text-block top-right shadow-it">
+
+                        <p class="flexit">
+                        	Toulouse Métropole a élaboré en 2015 un plan d’action Smart City dans l’objectif de faire de Toulouse une métropole plus “intelligente”, replaçant le citoyen au coeur d’une métropole mieux gérée, encourageant sa participation et sa contribution dans les projets urbains.
+                        </p>
+
+                            <img class="flexit" src="img/LogoToulouseMetropole.png" alt="Toulouse Metropole Logo" class="p4-logo-opendata text-block bottom-right">
+                        </span>
+                </div>
+
+            </div>
+        </div> <!-- row page-4-content -->
+
+    
+    <!-- page 4 fin -->
+
+    <!-- page 5 début PARTENAIRES-->
+    <div id="partenaires" class="row">
 
     </div>
+    <!-- page 5 fin -->
+
+    <!-- page 6 début ESPACE PRESSE-->
+    <div id="espace-press" class="row">
+
+    </div>
+    <!-- page 6 fin -->
+                          
+</div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>

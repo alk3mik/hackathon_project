@@ -3,7 +3,11 @@
 
 }
 
-
+@media  all and (min-width: 768px) and (max-width: 992px) {
+    .title-wrapper {
+        max-height: 60vh;
+    }
+}
 /*--- sm and md only --- */
 @media  all and (min-width: 768px) and (max-width: 1199px) {
     .menu-li {
@@ -22,21 +26,31 @@
         opacity: 1;
         cursor: pointer;
     }
+    .counter-table {
+        float: right;
+        transform-origin: center;
+        transform: translateY(100%);
+    }
     .countdown-wrapper {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        flex-direction: row;
+        justify-content: space-around;
         height: 100vh;
     }
     #countdown {
         font-size: 5.8em;
+        font-weight: 100;
         /*font-weight: 200;*/
         text-align: justify;
     }
     .countdown-num {
         flex: 1 1 auto;
         height: 100vh;
-        padding: 50% 0;
+        /*padding: 50% 0;*/
+    }
+    .countdown-letter td {
+        font-size: 2.8em;
+        text-align: center;
     }
 
 }

@@ -47,6 +47,7 @@ $( document ).ready(function() {
             {
                 opacity: '1',
                 top: '50px',
+                // height: viewportW / 2 + "px"
                 // left: ((viewportH / 100) * 5) + "px",
             }, 800);
     }

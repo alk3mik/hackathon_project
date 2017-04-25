@@ -24,6 +24,7 @@
 body {
     font-family: Roboto, sans-serif;
     color: #262626;
+    overflow-x: hidden;
 }
 /*
     Definition classes
@@ -74,6 +75,7 @@ h2 {
     background-image: url("../img/home_txt_wrapp.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .home-title {
     display: block;
@@ -230,23 +232,7 @@ td {
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .home-title {
-        margin: 14% 0 0 4%;
-        font-weight: 400;
-        font-size: 3.7em;
-        width: 100%;
-        letter-spacing: -3px;
-        color: #000;
-    }
-    .home-sub-title {
-        margin-left: 11%;
-        font-size: 5.0em;
-        width: 100%;
-        letter-spacing: 0px;
-        color: #080808;
-    }
-}
+
 @media (min-width: 480px) {
     .navbar-header {
         float: none;
@@ -352,7 +338,7 @@ td {
     flex: 0 1 auto;
 }
 .text-block {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-weight: 200;
@@ -483,57 +469,7 @@ td {
     /*border-radius: 15px;*/
     /*border: 1px solid #E91E63;*/
 }
-.taller {
-    font-size: 1.4em;
-}
 
-.flexit {
-    flex: 0 1 auto;
-}
-.text-block {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-weight: 200;
-    /*display: inline-block;*/
-    padding: 30px 69px;
-    /*border: 2px solid #FBA858;*/
-    background-color: rgba(255, 255, 255, 1);
-}
-.open-data-link {
-    width: 100%;
-}
-.open-data-link:hover {
-    border: 1px solid #E91E63;
-    box-shadow: 2px 1px 6px #262626;
-}
-.top-left {
-    margin: 8px 1% 8px 0;
-    /*border-radius: 15px 0 0 15px;*/
-}
-.top-right {
-    margin: 8px 0 8px 1%;
-    /*border-radius: 0 15px 15px 0;*/
-}
-.bottom-left {
-    margin: 8px 1% 8px 0;
-    /*border-radius: 0 0 15px 0;*/
-}
-.bottom-right {
-    margin: 8px 0 8px 1%;
-    /*border-radius: 0 0 0 15px;*/
-}
-
-.page-4 p {
-    color: #000000;
-    font-size: 1.6em;
-    font-weight: 200;
-    text-align: justify;
-    /*transform: translate(0%, 2%);*/
-}
-.center-it-vertical {
-    position: relative;
-}
 
 .page-2-ul {
     /*color: #fba858;*/

@@ -8,9 +8,7 @@
     .menu-li {
         font-size: 2.2em;
     }
-}
-@media  all and (min-width: 1200px) and (max-width: 1400px){
-     .countdown-wrapper {
+    .countdown-wrapper {
         float: right;
         max-height: 100vh;
         padding-top: 57vh;
@@ -21,7 +19,7 @@
     }
     #countdown {
         margin: 0;
-        font-size: 7em;
+        font-size: 11em;
         font-weight: 100;
         text-align: center;
 
@@ -29,5 +27,10 @@
     .countdown-letter td {
         font-size: 2.8em;
         text-align: center;
+    }
+}
+@media  all and (min-width: 1200px) and (max-width: 1400px){
+    #countdown {
+        font-size: 7em;
     }
 }

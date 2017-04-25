@@ -30,3 +30,21 @@
 
 
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .home-title {
+        margin: 14% 0 0 4%;
+        font-weight: 400;
+        font-size: 3.7em;
+        width: 100%;
+        letter-spacing: -3px;
+        color: #000;
+    }
+    .home-sub-title {
+        margin-left: 11%;
+        font-size: 5.0em;
+        width: 100%;
+        letter-spacing: 0px;
+        color: #080808;
+    }
+}

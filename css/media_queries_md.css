@@ -1,16 +1,19 @@
 /*--- md and up ---*/
 @media  all and  (min-width: 992px) and (max-width: 1199px) {
+    .menu-ul {
+        min-height: 87.5vh !important;
+        line-height: 87.5vh !important;
+        width: 40vw;
+    }
+
     .menu-li {
         margin: auto;
-        font-size: 4em;
+        font-size: 2em;
         text-align: center;
     }
     .close-menu {
-        width: 50px;
-        height: 50px;
-        float: right;
-        margin: 10px -5px 0 0;
-        opacity: 0.7;
+        width: 36px;
+        height: 36px;
     }
     .close-menu:hover {
         opacity: 1;
@@ -39,9 +42,12 @@
         font-size: 2.8em;
         text-align: center;
     }
+    .center-it-vertical {
+        margin: 36px 0;
+    }
 }
 
-@media  all and (min-width: 768px) and (max-width: 992px) {
+@media  all and (min-width: 768px) and (max-width: 991px) {
     .title-wrapper {
         max-height: 60vh;
     }
@@ -51,6 +57,8 @@
         align-items: stretch;
         justify-content: space-around;
         padding-top: 32px;
+        position: absolute;
+        bottom: 0;
     }
     .countdown-num {
         display: block;
@@ -75,7 +83,7 @@
         font-size: 2.7em;
     }
     .menu-ul {
-        width: 92vw!important;
+        width: 90vw!important;
         min-height: 90vh!important;
         line-height: 90vh!important;
         padding: 0;
@@ -85,21 +93,39 @@
     }
     .menu-li {
         margin: auto;
-        font-size: 4em;
+        font-size: 3.4em;
         text-align: center;
+    }
+    .close-menu {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 12px;
+        margin: 0;
+        opacity: 0.7;
+    }
+    .open-data-link {
+        width: 76%;
+        margin: 0 auto 14px;
+    }
+    .page-2-content, .page-4-content {
+        background-image: url("../img/bg_pages_991.png");
     }
 }
 /*--- sm and md only --- */
 @media  all and (min-width: 768px) and (max-width: 1199px) {
-
-
-    .countdown-wrapper {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: baseline;*/
-        /*height: 100vh;*/
+    .page-2 p {
+        font-size: 1.3em;
+        font-weight: 300;
     }
-
+    .page-2-ul {
+        font-size: 1.3em;
+        font-weight: 400;
+        margin: 12px 20px;
+    }
+    .center-it-vertical {
+        margin: 12px 0;
+    }
 
 }
 

@@ -24,6 +24,13 @@ $( document ).ready(function() {
                 top: ((viewportH / 100) * 2) + "px",
                 left: ((viewportH / 100) * 2) + "px",
             }, 800);
+        // adjust height of text blocks in page 2 (open-Data)
+        let divHeigths = $(".resize-it-vertical").map(function() {
+                return $(this).height();
+            }).get(),
+            maxHeight = Math.max.apply(null, divHeigths);
+
+        $(".resize-it-vertical").height(maxHeight);
 
     }
     else if ( viewportW > 991 ) {
@@ -35,12 +42,12 @@ $( document ).ready(function() {
             }, 800);
 
         // adjust height of text blocks in page 2 (open-Data)
-        let divHeigths = $(".center-it-vertical").map(function() {
+        let divHeigths = $(".resize-it-vertical").map(function() {
                 return $(this).height();
             }).get(),
             maxHeight = Math.max.apply(null, divHeigths);
 
-        $(".center-it-vertical").height(maxHeight);
+        $(".resize-it-vertical").height(maxHeight);
     }
     else if ( viewportW > 768 ) {
         roundTitle.animate(
@@ -50,6 +57,9 @@ $( document ).ready(function() {
                 // height: viewportW / 2 + "px"
                 // left: ((viewportH / 100) * 5) + "px",
             }, 800);
+        let menuW = $('.menu-ul').width();
+        let closeIcon = $('.close-menu');
+        closeIcon.css('left', (menuW / 2) - (closeIcon.width() / 2) + "px");
     }
     else {
         roundTitle.animate(
@@ -60,7 +70,7 @@ $( document ).ready(function() {
             }, 800);
         let menuW = $('.menu-ul').width();
         let closeIcon = $('.close-menu');
-        $('.close-menu').css('left', (menuW / 2) - (closeIcon.width() / 2) + "px");
+        closeIcon.css('left', (menuW / 2) - (closeIcon.width() / 2) + "px");
         $('.home-logo-toulouse').attr('src', 'img/log_toulouse_260.png');
 
     }
@@ -72,7 +82,7 @@ $( document ).ready(function() {
     }, 300);
 
     $('.navbar-toggle').on('click', function(e) {
-            $('.navbar-collapse').show().addClass('rotate-y-anim');
+             $('.navbar-collapse').show().addClass('rotate-y-anim');
             $('.navbar-toggle').fadeOut(200);
     });
     $('.menu-li').on('click', function(){
@@ -86,7 +96,7 @@ $( document ).ready(function() {
     });
 
     $('.arrow-down').on('click', function() {
-       $(document).scrollTo('#open-data');
+       window.scrollTo(0, $('#open-data').offset().top);
     });
     $('.open-data-link').on('click', function(e) {
        e.preventDefault();

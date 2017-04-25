@@ -19,7 +19,7 @@
     }
     #countdown {
         margin: 0;
-        font-size: 11em;
+        font-size: 7em;
         font-weight: 100;
         text-align: center;
 
@@ -31,6 +31,6 @@
 }
 @media  all and (min-width: 1367px) and (max-width: 1400px){
     #countdown {
-        font-size: 7em;
+        font-size: 8em;
     }
 }

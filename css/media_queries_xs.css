@@ -16,6 +16,7 @@
         cursor: pointer;
     }
     .menu-ul {
+        min-height: 90vh;
         width: 89vw!important;
         min-height: 85vh!important;
         line-height: 85vh!important;

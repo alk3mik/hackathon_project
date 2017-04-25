@@ -1,15 +1,5 @@
 /*--- md and up ---*/
-@media  all and  (min-width: 992px) {
-
-}
-
-@media  all and (min-width: 768px) and (max-width: 992px) {
-    .title-wrapper {
-        max-height: 60vh;
-    }
-}
-/*--- sm and md only --- */
-@media  all and (min-width: 768px) and (max-width: 1199px) {
+@media  all and  (min-width: 992px) and (max-width: 1199px) {
     .menu-li {
         margin: auto;
         font-size: 4em;
@@ -26,37 +16,64 @@
         opacity: 1;
         cursor: pointer;
     }
-    .counter-table {
-        float: right;
-        transform-origin: center;
-        transform: translateY(100%);
-    }
-    .countdown-wrapper {
+
+    .countdown-num {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         height: 100vh;
+        float: right;
+    }
+    .counter-table {
+        float: right;
+        height: 30vh;
     }
     #countdown {
-        font-size: 5.8em;
+        font-size: 5.2em;
         font-weight: 100;
         /*font-weight: 200;*/
         text-align: justify;
     }
-    .countdown-num {
-        flex: 1 1 auto;
-        height: 100vh;
-        /*padding: 50% 0;*/
-    }
+
     .countdown-letter td {
         font-size: 2.8em;
         text-align: center;
     }
-
 }
 
-/*--- xs, sm and md only --- */
-@media  all and  (max-width: 1199px) {
+@media  all and (min-width: 768px) and (max-width: 992px) {
+    .title-wrapper {
+        max-height: 60vh;
+    }
+    .countdown-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        padding-top: 32px;
+    }
+    .countdown-num {
+        display: block;
+        max-height: 40vh;
+        float: none;
+    }
+    .counter-table {
+        float: none;
+    }
+    #countdown {
+        font-size: 4.2em;
+        font-weight: 100;
+        /*font-weight: 200;*/
+        text-align: justify;
+    }
+
+    .countdown-letter td {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .arrow-down {
+        font-size: 2.7em;
+    }
     .menu-ul {
         width: 92vw!important;
         min-height: 90vh!important;
@@ -71,4 +88,22 @@
         font-size: 4em;
         text-align: center;
     }
+}
+/*--- sm and md only --- */
+@media  all and (min-width: 768px) and (max-width: 1199px) {
+
+
+    .countdown-wrapper {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: baseline;*/
+        /*height: 100vh;*/
+    }
+
+
+}
+
+/*--- xs, sm and md only --- */
+@media  all and  (max-width: 1199px) {
+
 }

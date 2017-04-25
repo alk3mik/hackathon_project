@@ -46,7 +46,7 @@ $( document ).ready(function() {
         roundTitle.animate(
             {
                 opacity: '1',
-                top: '50px',
+                top: '25px',
                 // height: viewportW / 2 + "px"
                 // left: ((viewportH / 100) * 5) + "px",
             }, 800);
@@ -58,6 +58,9 @@ $( document ).ready(function() {
                 top: '90px',
                 // left: ((viewportH / 100) * 5) + "px",
             }, 800);
+        let menuW = $('.menu-ul').width();
+        let closeIcon = $('.close-menu');
+        $('.close-menu').css('left', (menuW / 2) - (closeIcon.width() / 2) + "px");
         $('.home-logo-toulouse').attr('src', 'img/log_toulouse_260.png');
 
     }

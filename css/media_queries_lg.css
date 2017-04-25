@@ -29,7 +29,7 @@
         text-align: center;
     }
 }
-@media  all and (min-width: 1200px) and (max-width: 1400px){
+@media  all and (min-width: 1367px) and (max-width: 1400px){
     #countdown {
         font-size: 7em;
     }

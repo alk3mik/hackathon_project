@@ -1,0 +1,50 @@
+/*--- xs only ---*/
+@media all and (max-width: 767px) {
+    .close-menu {
+        width: 60px;
+        height: 60px;
+        float: right;
+        margin: 10px -5px 0 0;
+        opacity: 0.7;
+    }
+    .close-menu:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .countdown-wrapper {
+        display: block;
+    }
+    #countdown {
+        font-size: 5.8em;
+        /*font-weight: 200;*/
+        text-align: justify;
+    }
+    .countdown-num {
+        flex: none;
+    }
+
+    .pull-right {
+        float: none;
+    }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .home-title {
+        margin: 14% 0 0 4%;
+        font-weight: 400;
+        font-size: 3.7em;
+        width: 100%;
+        letter-spacing: -3px;
+        color: #000;
+    }
+    .home-sub-title {
+        margin-left: 11%;
+        font-size: 5.0em;
+        width: 100%;
+        letter-spacing: 0px;
+        color: #080808;
+    }
+}

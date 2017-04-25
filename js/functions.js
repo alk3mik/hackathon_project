@@ -183,6 +183,76 @@ wrapProgVendredi.addEventListener('click', hideProg);
 /* FIN Noé */
 
 
-/* Alk-3mic */
+/* Alk3mik */
 
-/* FIN Alk-3mic */
+// Use the key ESC (Escape) to hide an element that was opened and it is above
+// the view.
+
+// Document.querySelector() returns the first Element within the document that
+// matches the specified selector, or group of selectors.
+
+var escapableElem = document.querySelector('.navbar-collapse');
+
+var menuElem = document.querySelector('button[type = button]');
+
+
+document.addEventListener("keyup", function() {
+
+    var myKey = event.keyCode || event.which;
+
+    if (myKey === 27) {
+
+        var isOpened = escapableElem.classList.contains('rotate-y-anim');
+
+        if (isOpened) {
+
+            // $('.navbar-collapse').removeClass('rotate-y-anim');
+            // $('.navbar-toggle').fadeIn(500);
+
+           menuElem.style.display = 'block';
+           escapableElem.classList.remove('rotate-y-anim');
+           
+//             fadeOut(escapableElem);
+
+        }
+
+    }
+
+});
+
+
+// Native JS *fadeIn* and *fadeOut* functions.
+//
+// Taken from http://www.chrisbuttery.com/articles/fade-in-fade-out-with-javascript
+/*
+function fadeOut(el){
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .1) < 0) {
+      el.style.display = "none";
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+
+// fade in
+
+function fadeIn(el, display){
+  el.style.opacity = 0;
+  el.style.display = display || "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (!((val += .1) > 1)) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+}
+*/
+//console.log(escapableElem, typeof escapableElem, escapableElem.length);
+// escapableElem.addEventListener();
+
+/* FIN Alk3mik */

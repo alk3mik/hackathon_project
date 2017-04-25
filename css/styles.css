@@ -25,6 +25,7 @@ body {
     font-family: Roboto, sans-serif;
     color: #262626;
     overflow-x: hidden;
+    margin: 0px;
 }
 /*
     Definition classes
@@ -73,9 +74,13 @@ h2 {
     display: inline-block;
     position: relative;
     background-image: url("../img/home_txt_wrapp.svg");
-    background-size: contain;
+    /*background-size: contain;*/
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(233, 30, 99, 0.4);
+    border-radius: 100%;
+    border: 0px;
 }
 .home-title {
     display: block;
@@ -110,6 +115,9 @@ h2 {
 }
 
 .countdown-global {
+    /*background-color: rgba(233, 30, 99, 0.2);*/
+    background-color: rgba(251, 168, 88, 0.5);
+    font-weight: 800;
     color: #ffffff;
     text-align: justify;
     text-shadow: 1px 1px 1px #E91E63;
@@ -321,11 +329,19 @@ td {
     font-weight: bold;
 }
 
+.title {
+    color: #000000;
+    background-color: rgba(233, 30, 99, 0.5);
+    border-radius: 1px 1px 10px 10px;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.53);
+}
+
 .page-2 h2 {
     font-weight: 300;
 	line-height: 1.6em;
 	padding: 0 1%;
-    /*background-color: rgba(190, 190, 190, 0.5);*/
 	text-align: center;
 	/*border-radius: 15px;*/
     /*border: 1px solid #E91E63;*/

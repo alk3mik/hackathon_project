@@ -149,13 +149,48 @@ td {
 
 .glyphicon-menu-down {
     width: 50px;
-    background-color: rgba(251, 168, 88, 0.7);
+    /*background-color: rgba(251, 168, 88, 1.0);*/
+    background-color: rgba(233, 30, 99, 1); 
     border-radius: 10px;
-    color: #E91E63;
+    /*color: #E91E63;*/
+    color: #FFFFFF;
     opacity: 1;
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
     box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.53);
+}
+
+.jiggle {
+    animation-name: jiggle;
+    animation-duration: 0.3s;
+    animation-iteration-count: 30;
+    transform: rotate(-5deg);
+    /*
+    -webkit-animation: jiggle 0.2s 1;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: jiggle;
+    -moz-animation-iteration-count: 1;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);*/
+}
+
+
+@keyframes jiggle {
+    0% {transform: rotate(-5deg);}
+    25% {transform: rotate(-2.5deg);}
+    50% {transform: rotate(2.5deg);}
+    100% {transform: rotate(5deg);}
+}   
+
+@-moz-keyframes jiggle {
+    0% {-moz-transform: rotate(-5deg);}
+    50% {-moz-transform: rotate(5deg);}
+}
+
+
+@-webkit-keyframes jiggle {
+    0% {-webkit-transform: rotate(-5deg);}
+    50% {-webkit-transform: rotate(5deg);}
 }
 
 /* bootstrap overrides */
@@ -421,6 +456,8 @@ td {
     list-style: square;
     margin: 24px 30px;
 }
+
+
 /*
 .logo-container {
     position: relative;

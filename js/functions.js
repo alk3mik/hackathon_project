@@ -185,29 +185,31 @@ wrapProgVendredi.addEventListener('click', hideProg);
 
 /* Alk3mik */
 
-// Use the key ESC (Escape) to hide an element that was opened and it is above
-// the view.
+/*
+    Use the key ESC (Escape) to hide an element that was opened and it is
+    above the view.
+*/
 
 // Document.querySelector() returns the first Element within the document that
 // matches the specified selector, or group of selectors.
 
 var escapableElem = document.querySelector('.navbar-collapse');
 
+// In the following we select the element <button> bearing the
+// attribute *type* equal to *button*.
 var menuElem = document.querySelector('button[type = button]');
 
 
-document.addEventListener("keyup", function() {
+window.addEventListener("keyup", function() {
 
     var myKey = event.keyCode || event.which;
 
+// The ESC key code is 27
     if (myKey === 27) {
 
         var isOpened = escapableElem.classList.contains('rotate-y-anim');
 
         if (isOpened) {
-
-            // $('.navbar-collapse').removeClass('rotate-y-anim');
-            // $('.navbar-toggle').fadeIn(500);
 
            menuElem.style.display = 'block';
            escapableElem.classList.remove('rotate-y-anim');
@@ -252,7 +254,5 @@ function fadeIn(el, display){
   })();
 }
 */
-//console.log(escapableElem, typeof escapableElem, escapableElem.length);
-// escapableElem.addEventListener();
 
 /* FIN Alk3mik */

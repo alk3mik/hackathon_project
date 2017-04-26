@@ -140,9 +140,11 @@ td {
     opacity: 0.5;
     color: #ffffff;
 }
+
 .arrow-down:hover {
     cursor: pointer;
     opacity: 1;
+    width: 100px;
 }
 
 .glyphicon-menu-down {
@@ -151,6 +153,9 @@ td {
     border-radius: 10px;
     color: #E91E63;
     opacity: 1;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
+    -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.53);
 }
 
 /* bootstrap overrides */

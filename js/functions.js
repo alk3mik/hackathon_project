@@ -185,6 +185,53 @@ wrapProgVendredi.addEventListener('click', hideProg);
 
 /* Alk3mik */
 
+
+// Toggling left panel (L)
+
+var hiddenLMenu = document.getElementById('page-2-Lmenu');
+
+hiddenLMenu.addEventListener('click', function() {
+
+    var panel = document.getElementsByClassName('page-2-Lpanel');
+
+    console.log(panel, typeof panel, panel[0]);
+    
+    if (panel[0].style.opacity === '0') {
+ 
+        panel[0].style.opacity = '1';
+ 
+    } else {
+ 
+        panel[0].style.opacity = '0';
+ 
+    }
+
+});
+
+
+// Toggling right panel (R)
+
+var hiddenRMenu = document.getElementById('page-2-Rmenu');
+
+hiddenRMenu.addEventListener('click', function() {
+
+    var panel = document.getElementsByClassName('page-2-Rpanel');
+
+    console.log(panel, typeof panel, panel[0]);
+    
+    if (panel[0].style.opacity === '0') {
+ 
+        panel[0].style.opacity = '1';
+ 
+    } else {
+ 
+        panel[0].style.opacity = '0';
+ 
+    }
+
+});
+
+
 /*
     Use the key ESC (Escape) to hide an element that was opened and it is
     above the view.

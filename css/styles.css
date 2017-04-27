@@ -78,7 +78,8 @@ h2 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(233, 30, 99, 0.4);
+    /*background-color: rgba(233, 30, 99, 0.4);*/
+    background: radial-gradient(farthest-side at 50% 5%, #E91E63, );
     border-radius: 100%;
     border: 0px;
 }
@@ -144,11 +145,11 @@ td {
 .arrow-down:hover {
     cursor: pointer;
     opacity: 1;
-    width: 100px;
+    width: 50%;
 }
 
 .glyphicon-menu-down {
-    width: 50px;
+    width: 15%;
     /*background-color: rgba(251, 168, 88, 1.0);*/
     background-color: rgba(233, 30, 99, 1); 
     border-radius: 10px;
@@ -157,14 +158,14 @@ td {
     opacity: 1;
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
-    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.53);
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.53);
 }
 
 .jiggle {
     animation-name: jiggle;
-    animation-duration: 0.3s;
-    animation-iteration-count: 30;
-    transform: rotate(-5deg);
+    animation-duration: 0.45s;
+    animation-iteration-count: 33;
+    transform: rotate(-3deg);
     /*
     -webkit-animation: jiggle 0.2s 1;
     -moz-animation-duration: 0.2s;
@@ -176,21 +177,21 @@ td {
 
 
 @keyframes jiggle {
-    0% {transform: rotate(-5deg);}
-    25% {transform: rotate(-2.5deg);}
-    50% {transform: rotate(2.5deg);}
-    100% {transform: rotate(5deg);}
+    0% {transform: rotate(-4deg);}
+    /*25% {transform: rotate(-5deg);}*/
+    50% {transform: rotate(4deg);}
+    /*100% {transform: rotate(10deg);}*/
 }   
 
 @-moz-keyframes jiggle {
-    0% {-moz-transform: rotate(-5deg);}
-    50% {-moz-transform: rotate(5deg);}
+    0% {-moz-transform: rotate(-4deg);}
+    50% {-moz-transform: rotate(4deg);}
 }
 
 
 @-webkit-keyframes jiggle {
-    0% {-webkit-transform: rotate(-5deg);}
-    50% {-webkit-transform: rotate(5deg);}
+    0% {-webkit-transform: rotate(-4deg);}
+    50% {-webkit-transform: rotate(4deg);}
 }
 
 /* bootstrap overrides */
@@ -399,9 +400,18 @@ td {
     font-size: 1.4em;
 }
 
+.page-2-Lpanel, .page-2-Rpanel {
+    /*height: 0%;*/
+    display: none;
+    overflow: hidden;
+    z-index: 9999;
+    transition: display 0.3s linear 0s;
+}
+
 .flexit {
     flex: 0 1 auto;
 }
+
 .text-block {
     display: flex;
     flex-direction: column;

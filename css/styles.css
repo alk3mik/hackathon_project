@@ -79,7 +79,7 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     /*background-color: rgba(233, 30, 99, 0.4);*/
-    background: radial-gradient(farthest-side at 50% 5%, #E91E63, );
+    /*background: radial-gradient(farthest-side at 50% 5%, #E91E63, );*/
     border-radius: 100%;
     border: 0px;
 }
@@ -117,7 +117,7 @@ h2 {
 
 .countdown-global {
     /*background-color: rgba(233, 30, 99, 0.2);*/
-    background-color: rgba(251, 168, 88, 0.5);
+    /*background-color: rgba(251, 168, 88, 0.5);*/
     font-weight: 800;
     color: #ffffff;
     text-align: justify;
@@ -149,9 +149,10 @@ td {
 }
 
 .glyphicon-menu-down {
+    z-index: 10000;
     width: 15%;
-    /*background-color: rgba(251, 168, 88, 1.0);*/
-    background-color: rgba(233, 30, 99, 1); 
+    background-color: rgba(251, 168, 88, 1.0);
+    /*background-color: rgba(233, 30, 99, 1); */
     border-radius: 10px;
     /*color: #E91E63;*/
     color: #FFFFFF;
@@ -381,7 +382,13 @@ td {
 
 .title {
     color: #000000;
-    background-color: rgba(233, 30, 99, 0.5);
+    /*background-color: rgba(233, 30, 99, 0.5);*/
+    background-color: rgba(251, 168, 88, 1.0);
+    background: #E91E63; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#E91E63, #FBA858); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E91E63, #FBA858); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E91E63, #FBA858); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E91E63, #FBA858); /* Standard syntax */
     border-radius: 1px 1px 10px 10px;
     -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.53);
@@ -400,11 +407,21 @@ td {
     font-size: 1.4em;
 }
 
-.page-2-Lpanel, .page-2-Rpanel {
+.page-2-Lpanel {
     /*height: 0%;*/
-    display: none;
+    /*display: inline-block;*/
+    opacity: 0;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 1;
+    transition: display 0.3s linear 0s;
+}
+
+.page-2-Rpanel {
+    /*height: 0%;*/
+    /*display: inline-flex;*/
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1;
     transition: display 0.3s linear 0s;
 }
 
@@ -664,6 +681,10 @@ td {
     text-align: center;
     /*border-radius: 15px;*/
     /*border: 1px solid #E91E63;*/
+}
+
+#page-4-title {
+    height: 69px;
 }
 
 

@@ -687,16 +687,33 @@ td {
     height: 69px;
 }
 
+.page-4-Lpanel {
+    /*height: 0%;*/
+    /*display: inline-block;*/
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: display 0.3s linear 0s;
+}
 
-.page-2-ul {
-    /*color: #fba858;*/
+.page-4-Rpanel {
+    /*height: 0%;*/
+    /*display: inline-flex;*/
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: display 0.3s linear 0s;
+}
+
+/*.page-2-ul {
+    color: #fba858;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.43);
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.7em;
     list-style: square;
     margin: 24px 30px;
-}
+}*/
 
 /* FIN PAGE ORGANISATEURS */
 

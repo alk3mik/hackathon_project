@@ -185,8 +185,30 @@ wrapProgVendredi.addEventListener('click', hideProg);
 
 /* Alk3mik */
 
+/* TEST
+var hiddenLMenu = document.getElementsByClassName('Lmenu');
 
-// Toggling left panel (L)
+hiddenLMenu.addEventListener('click', function() {
+
+    var panel = document.getElementsByClassName('Lpanel');
+
+    //console.log(panel, typeof panel, panel[0]);
+    
+    if (panel[0].style.opacity === '0') {
+ 
+        panel[0].style.opacity = '1';
+ 
+    } else {
+ 
+        panel[0].style.opacity = '0';
+ 
+    }
+
+});
+*/
+
+
+// Toggling pag. 2 left panel (L)
 
 var hiddenLMenu = document.getElementById('page-2-Lmenu');
 
@@ -194,7 +216,7 @@ hiddenLMenu.addEventListener('click', function() {
 
     var panel = document.getElementsByClassName('page-2-Lpanel');
 
-    console.log(panel, typeof panel, panel[0]);
+    //console.log(panel, typeof panel, panel[0]);
     
     if (panel[0].style.opacity === '0') {
  
@@ -209,7 +231,7 @@ hiddenLMenu.addEventListener('click', function() {
 });
 
 
-// Toggling right panel (R)
+// Toggling pag. 2 right panel (R)
 
 var hiddenRMenu = document.getElementById('page-2-Rmenu');
 
@@ -217,7 +239,53 @@ hiddenRMenu.addEventListener('click', function() {
 
     var panel = document.getElementsByClassName('page-2-Rpanel');
 
-    console.log(panel, typeof panel, panel[0]);
+    //console.log(panel, typeof panel, panel[0]);
+    
+    if (panel[0].style.opacity === '0') {
+ 
+        panel[0].style.opacity = '1';
+ 
+    } else {
+ 
+        panel[0].style.opacity = '0';
+ 
+    }
+
+});
+
+
+// Toggling pag. 4 left panel (L)
+
+var hiddenLMenu = document.getElementById('page-4-Lmenu');
+
+hiddenLMenu.addEventListener('click', function() {
+
+    var panel = document.getElementsByClassName('page-4-Lpanel');
+
+    //console.log(panel, typeof panel, panel[0]);
+    
+    if (panel[0].style.opacity === '0') {
+ 
+        panel[0].style.opacity = '1';
+ 
+    } else {
+ 
+        panel[0].style.opacity = '0';
+ 
+    }
+
+});
+
+
+// Toggling pag. 4 right panel (R)
+
+var hiddenRMenu = document.getElementById('page-4-Rmenu');
+
+hiddenRMenu.addEventListener('click', function() {
+
+    var panel = document.getElementsByClassName('page-4-Rpanel');
+
+    //console.log(panel, typeof panel, panel[0]);
     
     if (panel[0].style.opacity === '0') {
  
